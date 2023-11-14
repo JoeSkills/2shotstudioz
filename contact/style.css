@@ -287,7 +287,6 @@ img {
   font-weight: 700;
   border-radius: 0.3125rem;
   font-size: 0.9375rem;
-  text-transform: capitalize;
 }
 
 .contact-section .container form.contact-form > div > input:focus,
