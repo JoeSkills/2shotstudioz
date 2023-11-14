@@ -10,8 +10,8 @@ const swiper = new Swiper('.swiper', {
 });
 
 const mobileMenuIcon = document.querySelector('.mobile-menu-icon');
-
 const mobileNavigation = document.querySelector('.mobile-navigation');
+const toTop = document.querySelector('.to-top');
 
 mobileMenuIcon.addEventListener('click', () => {
   if (mobileMenuIcon.classList.contains('fa-bars')) {
@@ -32,5 +32,13 @@ document.addEventListener('scroll', () => {
     navigationBar.classList.add('scrolled');
   } else {
     navigationBar.classList.remove('scrolled');
+  }
+});
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 100) {
+    toTop.classList.add('active');
+  } else {
+    toTop.classList.remove('active');
   }
 });

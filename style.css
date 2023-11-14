@@ -13,9 +13,37 @@ img {
   vertical-align: middle;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 a {
   text-decoration: none;
   color: inherit;
+}
+
+.to-top {
+  position: fixed;
+  background-color: #7d6ee7;
+  color: #fff;
+  width: 3.125rem;
+  height: 3.125rem;
+  border-radius: 50%;
+  bottom: 1rem;
+  right: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  opacity: 0;
+  transition: all 0.4s;
+  pointer-events: none;
+}
+
+.to-top.active {
+  bottom: 2rem;
+  pointer-events: auto;
+  opacity: 1;
 }
 
 .header-container {
