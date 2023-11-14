@@ -35,6 +35,14 @@ document.addEventListener('scroll', () => {
   }
 });
 
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 100) {
+    toTop.classList.add('active');
+  } else {
+    toTop.classList.remove('active');
+  }
+});
+
 const typed = document.querySelector('.typed');
 
 if (typed) {

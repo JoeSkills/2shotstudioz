@@ -1,7 +1,7 @@
 import './style.css';
 
 const mobileMenuIcon = document.querySelector('.mobile-menu-icon');
-
+const toTop = document.querySelector('.to-top');
 const mobileNavigation = document.querySelector('.mobile-navigation');
 
 mobileMenuIcon.addEventListener('click', () => {
