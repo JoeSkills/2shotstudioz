@@ -35,27 +35,17 @@ document.addEventListener('scroll', () => {
   }
 });
 
-<<<<<<< HEAD
-window.addEventListener('scroll', () => {
-  if (window.scrollY > 100) {
-    toTop.classList.add('active');
-  } else {
-    toTop.classList.remove('active');
-  }
-});
-=======
 const typed = document.querySelector('.typed');
-     
-if(typed) {
+
+if (typed) {
   let typed_strings = typed.getAttribute('data-typed-items');
   typed_strings = typed_strings.split(',');
-  
- new Typed('.typed', {
-  strings: typed_strings,
-  loop: true,
-  typespeed: 50,
-  backspeed: 50,
-  backDelay: 2000,
- });
-};
->>>>>>> 3f61e904aed2f8ea7abc269baa67b7d830519a7c
+
+  new Typed('.typed', {
+    strings: typed_strings,
+    loop: true,
+    typespeed: 50,
+    backspeed: 50,
+    backDelay: 2000,
+  });
+}
